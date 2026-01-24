@@ -1,10 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\Winter_2026\\CSE232\\Lab03\\",
+  "WorkspaceRootPath": "C:\\Users\\jamga\\Documents\\Lab03_Stack\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{174D9C02-293E-48E2-84B4-5B4889B7FF95}|LabStack.vcxproj|F:\\Winter_2026\\CSE232\\Lab03\\stack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{174D9C02-293E-48E2-84B4-5B4889B7FF95}|LabStack.vcxproj|C:\\Users\\jamga\\Documents\\Lab03_Stack\\testStack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{174D9C02-293E-48E2-84B4-5B4889B7FF95}|LabStack.vcxproj|solutionrelative:testStack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{174D9C02-293E-48E2-84B4-5B4889B7FF95}|LabStack.vcxproj|C:\\Users\\jamga\\Documents\\Lab03_Stack\\stack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{174D9C02-293E-48E2-84B4-5B4889B7FF95}|LabStack.vcxproj|solutionrelative:stack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{174D9C02-293E-48E2-84B4-5B4889B7FF95}|LabStack.vcxproj|C:\\Users\\jamga\\Documents\\Lab03_Stack\\unitTest.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{174D9C02-293E-48E2-84B4-5B4889B7FF95}|LabStack.vcxproj|solutionrelative:unitTest.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{174D9C02-293E-48E2-84B4-5B4889B7FF95}|LabStack.vcxproj|C:\\Users\\jamga\\Documents\\Lab03_Stack\\spy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{174D9C02-293E-48E2-84B4-5B4889B7FF95}|LabStack.vcxproj|solutionrelative:spy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{174D9C02-293E-48E2-84B4-5B4889B7FF95}|LabStack.vcxproj|C:\\Users\\jamga\\Documents\\Lab03_Stack\\testSpy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{174D9C02-293E-48E2-84B4-5B4889B7FF95}|LabStack.vcxproj|solutionrelative:testSpy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\vector||{3B902123-F8A7-4915-9F01-361F908088D0}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +33,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,13 +41,78 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "vector",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\vector",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\vector",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\vector",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\vector",
+              "ViewState": "AgIAAM8GAAAAAAAAAAAkwNgGAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-24T17:31:21.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "spy.h",
+              "DocumentMoniker": "C:\\Users\\jamga\\Documents\\Lab03_Stack\\spy.h",
+              "RelativeDocumentMoniker": "spy.h",
+              "ToolTip": "C:\\Users\\jamga\\Documents\\Lab03_Stack\\spy.h",
+              "RelativeToolTip": "spy.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-24T17:21:23.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "testSpy.h",
+              "DocumentMoniker": "C:\\Users\\jamga\\Documents\\Lab03_Stack\\testSpy.h",
+              "RelativeDocumentMoniker": "testSpy.h",
+              "ToolTip": "C:\\Users\\jamga\\Documents\\Lab03_Stack\\testSpy.h",
+              "RelativeToolTip": "testSpy.h",
+              "ViewState": "AgIAAHUCAAAAAAAAAAAAAGMCAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-24T17:17:31.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "testStack.h",
+              "DocumentMoniker": "C:\\Users\\jamga\\Documents\\Lab03_Stack\\testStack.h",
+              "RelativeDocumentMoniker": "testStack.h",
+              "ToolTip": "C:\\Users\\jamga\\Documents\\Lab03_Stack\\testStack.h",
+              "RelativeToolTip": "testStack.h",
+              "ViewState": "AgIAANsEAAAAAAAAAAAhwOIEAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-24T17:13:51.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "unitTest.h",
+              "DocumentMoniker": "C:\\Users\\jamga\\Documents\\Lab03_Stack\\unitTest.h",
+              "RelativeDocumentMoniker": "unitTest.h",
+              "ToolTip": "C:\\Users\\jamga\\Documents\\Lab03_Stack\\unitTest.h",
+              "RelativeToolTip": "unitTest.h",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-24T17:13:45.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "stack.h",
-              "DocumentMoniker": "F:\\Winter_2026\\CSE232\\Lab03\\stack.h",
+              "DocumentMoniker": "C:\\Users\\jamga\\Documents\\Lab03_Stack\\stack.h",
               "RelativeDocumentMoniker": "stack.h",
-              "ToolTip": "F:\\Winter_2026\\CSE232\\Lab03\\stack.h",
+              "ToolTip": "C:\\Users\\jamga\\Documents\\Lab03_Stack\\stack.h",
               "RelativeToolTip": "stack.h",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAAAG8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAhwE4AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-01-22T18:53:34.399Z",
               "EditorCaption": ""
