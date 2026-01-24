@@ -1180,8 +1180,6 @@ public:
       //    empty container
       //    
       assertUnit(s.container.size() == 0);
-      if (s.container.size() >= 1)
-         assertUnit(s.container[0] == Spy(99));
       // teardown
       teardownStandardFixture(s);
    }
