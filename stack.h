@@ -106,7 +106,8 @@ namespace custom
 
         void pop()
         {
-            assert(!container.empty());
+            if(container.empty())
+               return;
             container.pop_back();
         }
 

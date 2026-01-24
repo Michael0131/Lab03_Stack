@@ -68,8 +68,10 @@ public:
       test_pushMove_standard();
 
       // Delete
-
-      /* place your pop unit tests here */;
+      test_pop_empty();
+      test_pop_single();
+      test_pop_single_with_others();
+      test_pop_double();
 
       // Status
       test_size_empty();
@@ -1139,6 +1141,124 @@ public:
     * POP
     ***************************************/
 
+     // test for when the array is just empty.
+   void test_pop_empty()
+   {  // setup
+      custom::stack<Spy> s;
+      Spy::reset();
+      // exercise
+      s.pop();
+      // verify
+
+      assertUnit(s.container.size() == 0);
+
+      // teardown
+      teardownStandardFixture(s);
+   }
+
+   // remove a single element
+   void test_pop_single()
+   {  // setup
+      custom::stack<Spy> s;
+      Spy value(99);
+      s.push(value);
+      Spy::reset();
+      // exercise
+      s.pop();
+      // verify
+      assertUnit(Spy::numCopy() == 0);    
+      assertUnit(Spy::numAlloc() == 0);   
+      assertUnit(Spy::numAssign() == 0);
+      assertUnit(Spy::numDelete() == 1);    // remove [99]
+      assertUnit(Spy::numDefault() == 0);
+      assertUnit(Spy::numNondefault() == 0);
+      assertUnit(Spy::numCopyMove() == 0);
+      assertUnit(Spy::numAssignMove() == 0);
+      assertUnit(Spy::numDestructor() == 1); // remove [99]
+      assertUnit(value == Spy(99));
+      //    
+      //    empty container
+      //    
+      assertUnit(s.container.size() == 0);
+      if (s.container.size() >= 1)
+         assertUnit(s.container[0] == Spy(99));
+      // teardown
+      teardownStandardFixture(s);
+   }
+
+   // remove one element without touching the others
+   void test_pop_single_with_others()
+   {  // setup
+      // +----+----+----+----+----+
+      // | 26 | 49 | 67 | 89 | 99 |
+      // +----+----+----+----+----+
+      custom::stack<Spy> s;
+      setupStandardFixture(s);
+      Spy value(99);
+      s.push(value);
+      Spy::reset();
+      // exercise
+      s.pop();
+      // verify
+      assertUnit(Spy::numCopy() == 0);       
+      assertUnit(Spy::numAlloc() == 0);      
+      assertUnit(Spy::numAssign() == 0);
+      assertUnit(Spy::numDelete() == 1);     // remove      [99] 
+      assertUnit(Spy::numDefault() == 0);
+      assertUnit(Spy::numNondefault() == 0);
+      assertUnit(Spy::numCopyMove() == 0);
+      assertUnit(Spy::numAssignMove() == 0);
+      assertUnit(Spy::numDestructor() == 1); // destroy     [99]
+      assertUnit(value == Spy(99));
+     // +----+----+----+----+
+     // | 26 | 49 | 67 | 89 |
+     // +----+----+----+----+
+      assertUnit(s.container.size() == 4);
+      if (s.container.size() >= 4)
+         assertUnit(s.container[0] == Spy(26));
+         assertUnit(s.container[1] == Spy(49));
+         assertUnit(s.container[2] == Spy(67));
+         assertUnit(s.container[3] == Spy(89));
+      // teardown
+      teardownStandardFixture(s);
+   }
+
+   // remove one element without touching the others
+   void test_pop_double()
+   {  // setup
+      // +----+----+----+----+----+
+      // | 26 | 49 | 67 | 89 | 99 |
+      // +----+----+----+----+----+
+      custom::stack<Spy> s;
+      setupStandardFixture(s);
+      Spy value(99);
+      s.push(value);
+      Spy::reset();
+      // exercise
+      s.pop();
+      s.pop();
+      // verify
+      assertUnit(Spy::numCopy() == 0);
+      assertUnit(Spy::numAlloc() == 0);
+      assertUnit(Spy::numAssign() == 0);
+      assertUnit(Spy::numDelete() == 2);     // remove      [99],[89] 
+      assertUnit(Spy::numDefault() == 0);
+      assertUnit(Spy::numNondefault() == 0);
+      assertUnit(Spy::numCopyMove() == 0);
+      assertUnit(Spy::numAssignMove() == 0);
+      assertUnit(Spy::numDestructor() == 2); // destroy     [99],[89]
+      assertUnit(value == Spy(99));
+      // +----+----+----+
+      // | 26 | 49 | 67 |
+      // +----+----+----+
+      assertUnit(s.container.size() == 3);
+      if (s.container.size() >= 3)
+         assertUnit(s.container[0] == Spy(26));
+         assertUnit(s.container[1] == Spy(49));
+         assertUnit(s.container[2] == Spy(67));
+      // teardown
+      teardownStandardFixture(s);
+   }
 
    
    /*************************************************************
