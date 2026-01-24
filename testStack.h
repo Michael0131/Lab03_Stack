@@ -1141,7 +1141,7 @@ public:
     * POP
     ***************************************/
 
-     // test for when the array is just empty.
+   // test for when the vector is just empty.
    void test_pop_empty()
    {  // setup
       custom::stack<Spy> s;
@@ -1223,7 +1223,7 @@ public:
       teardownStandardFixture(s);
    }
 
-   // remove one element without touching the others
+   // remove two elements without touching the others
    void test_pop_double()
    {  // setup
       // +----+----+----+----+----+
